@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warung Ngopino</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">NGOPINO</a>
+        <button class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#about">Kami</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#lokasi">Lokasi</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero-carousel" id="carousel">
+      <a href="#" class="carousel-control prev" onclick="changeSlide(-1)"
+        >&#10094;</a
+      >
+      <a href="#" class="carousel-control next" onclick="changeSlide(1)"
+        >&#10095;</a
+      >
+      <div class="carousel-item active" style="background-image: url('./img/1.jpeg')"></div>
+      <div class="carousel-item" style="background-image: url('./img/2.jpeg')"></div>
+      <div class="carousel-item" style="background-image: url('./img/3.jpeg')"></div>
+     
+    </section>
+
+    <div class="content-below-slider1">
+      <section id="about" class="container">
+        <div class="section-title">
+          <h1>Tentang Kami</h1>
+        </div>
+        <div class="about-content">
+          <img src="./img/3.jpg" alt="About Us" class="about-image" />
+          <div class="about-text">
+            <h2>Warung Ngopino</h2>
+            <p>
+              Ngopino adalah warung kopi yang berlokasi di Kota Kediri dan Pamenang. 
+              Toko ini menyajikan berbagai macam jenis kopi dengan beragam rasa yang lezat dan unik dengan kopi andalannya yaitu kopi Ijo. Selain mempunyai minuman andalannya, 
+              Ngopino juga mempunyai makanan andalan yaitu Mie Nyemek Ngopino
+          </p>
+          <p>
+            Didirikan tahun 2021, kami berkomitmen untuk memberikan pengalaman ngopi terbaik bagi pelanggan kami.
+          </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="content-below-slider">
+        <section id="produk" class="container">
+          <div class="section-title">
+            <h1>Menu Favorit</h1>
+          </div>
+          <div class="produk-grid">
+            <div class="produk-card">
+              <img src="./img/11.jpg" alt="Kopi Arabika" />
+              <div class="produk-card-content">
+                <h3>Es Kopi Susu</h3>
+                <p>Campuran kopi dan susu</p>
+                <p class="harga">Rp 8.000</p>
+              </div>
+            </div>
+            <div class="produk-card">
+              <img src="./img/10.jpg" alt="Kopi Robusta" />
+              <div class="produk-card-content">
+                <h3>Mie Nyemek</h3>
+                <p>Mie dengan resep ngopino</p>
+                <p class="harga">Rp 10.000</p>
+              </div>
+            </div>
+            <div class="produk-card">
+              <img src="./img/12.jpg" alt="Kopi Blend" />
+              <div class="produk-card-content">
+                <h3>Kopi Ijo</h3>
+                <p>Kopi khas tulungagung</p>
+                <p class="harga">Rp 8.000</p>
+              </div>
+            </div>
+            <div class="produk-card">
+              <img src="./img/13.jpg" alt="Kopi Toraja" />
+              <div class="produk-card-content">
+                <h3>Kopi Tubruk</h3>
+                <p>Biji kopi asli</p>
+                <p class="harga">Rp 8.000</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      <section id="galeri" class="container">
+        <div class="section-title">
+          <h1>Potret Ngopino</h1>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="./img/1.jpg" alt="Proses Pengolahan Kopi" />
+          </div>
+          <div class="gallery-item">
+            <img src="./img/2.jpg" alt="Perkebunan Kopi" />
+          </div>
+          <div class="gallery-item">
+            <img src="./img/3.jpg" alt="Penyajian Kopi" />
+          </div>
+          <div class="gallery-item">
+            <img src="./img/4.jpg" alt="Petani Kopi" />
+          </div>
+          <div class="gallery-item">
+            <img src="./img/6.jpg" alt="Proses Pengolahan Kopi" />
+          </div>
+          <div class="gallery-item">
+            <img src="./img/7.jpg" alt="Perkebunan Kopi" />
+          </div>
+          <div class="gallery-item">
+            <img src="./img/8.jpg" alt="Penyajian Kopi" />
+          </div>
+          <div class="gallery-item">
+            <img src="./img/9.jpg" alt="Petani Kopi" />
+          </div>
+        </div>
+      </section>
+
+      <section id="lokasi" class="maps-section">
+        <div class="container">
+          <div class="section-title">
+            <h1>Lokasi Kami</h1>
+            <p>
+              Temukan Ngopino di dua lokasi strategis kami. Kami siap melayani
+              Anda dengan pengalaman kopi terbaik.
+            </p>
+          </div>
+          <div class="maps-container">
+            <!-- Cabang Pusat -->
+            <div class="maps-location">
+              <h3>Cabang Kediri Kota</h3>
+              <div class="maps-content">
+                <div class="maps-info">
+                  <p>
+                    <strong>Alamat:</strong><br />
+                    Jl. Sersan KKO Usman No.3, Dandangan, Kec. Kota, Kota
+                    Kediri, Jawa Timur 64129
+                  </p>
+                  <p>
+                    <strong>Jam Buka:</strong><br />
+                    Senin - Minggu, 08.00 - 22.00 WIB
+                  </p>
+                </div>
+                <div class="maps-embed">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.7902725502754!2d112.01795157480552!3d-7.812012477566279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78579e4ac6b3a1%3A0xb85c4a96db114e86!2sWarung%20Ngopino.!5e0!3m2!1sid!2sid!4v1732604836323!5m2!1sid!2sid"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                  >
+                  </iframe>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cabang Pamenang -->
+            <div class="maps-location">
+              <h3>Cabang Pamenang</h3>
+              <div class="maps-content">
+                <div class="maps-info">
+                  <p>
+                    <strong>Alamat:</strong><br />
+                    Jl. Jodipati No.146, RT.001/RW.001, Suko, Menang, Kec. Pagu,
+                    Kabupaten Kediri, Jawa Timur 64183
+                  </p>
+                  <p>
+                    <strong>Jam Buka:</strong><br />
+                    Senin - Minggu, 09.00 - 23.00 WIB
+                  </p>
+                </div>
+                <div class="maps-embed">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0664943462375!2d112.07570737753412!3d-7.782774857182426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e785b5666dc69d7%3A0xafaf121ed417c7b4!2sWarung%20Ngopino.%202.0!5e0!3m2!1sid!2sid!4v1732605002661!5m2!1sid!2sid"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                  >
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <h3>Warung Ngopino</h3>
+          <!-- <p>&copy; 2024 Hak Cipta Dilindungi</p> -->
+          <div class="social-icons">
+            <a
+              href="https://www.instagram.com/ngopinokediri/"
+              target="_blank"
+              style="color: white; margin: 0 10px"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61551217780324"
+              target="_blank"
+              style="color: white; margin: 0 10px"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@ngopinokediri"
+              target="_blank"
+              style="color: white; margin: 0 10px"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
